@@ -1,0 +1,91 @@
+version: "3.1"
+
+intents:
+  - greet
+  - course_info
+  - enroll_info
+  - technical_support
+  - account_support
+  - goodbye
+
+entities:
+  - course
+  - issue
+  - account_issue
+
+slots:
+  course:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: course
+  issue:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: issue
+  account_issue:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: account_issue
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you today?"
+    - text: "Hi there! What can I assist you with?"
+    - text: "Hey! How can I make your day better?"
+    - text: "Good to see you! How can I support you today?"
+    - text: "Hello! What brings you here today?"
+    - text: "Hi! How's it going? How can I help?"
+
+  utter_course_info:
+    - text: "We offer a variety of programming courses including Python, Java, JavaScript, and more. Which course are you interested in?"
+    - text: "Our courses cover different programming languages and technologies. Do you have a specific course in mind?"
+    - text: "You can learn Python, Java, JavaScript, and many other programming languages with us. What would you like to know more about?"
+    - text: "We have courses in Python, Java, JavaScript, and more. Which one are you curious about?"
+    - text: "Interested in our courses? We cover a range of programming languages. Which one are you interested in?"
+    - text: "Our programming courses include Python, Java, JavaScript, and many others. What are you looking to learn?"
+
+  utter_enroll_info:
+    - text: "To enroll, please visit our enrollment page and follow the instructions. Do you need the link?"
+    - text: "You can sign up for our courses through our enrollment page. Would you like the link to get started?"
+    - text: "Enrolling is easy! Just go to our enrollment page and follow the steps. Do you need help with that?"
+    - text: "Ready to enroll? You can do it on our enrollment page. Need the link?"
+    - text: "You can enroll by visiting our enrollment page. Want me to share the link with you?"
+    - text: "To sign up for a course, head to our enrollment page and follow the instructions. Do you need assistance?"
+
+  utter_technical_support:
+    - text: "I'm sorry you're having technical issues. Can you please describe the problem in more detail?"
+    - text: "Technical issues can be frustrating. Could you tell me more about the problem you're facing?"
+    - text: "Let's sort out those technical issues. Can you explain what's going wrong?"
+    - text: "Sorry to hear you're having trouble. What's the technical issue you're encountering?"
+    - text: "Technical difficulties are never fun. Can you describe the issue for me?"
+    - text: "I understand you're having technical issues. Please give me more details so I can help."
+
+  utter_account_support:
+    - text: "I can help with account issues. What seems to be the problem with your account?"
+    - text: "Having trouble with your account? Let me know what's wrong, and I'll do my best to help."
+    - text: "Account issues can be tricky. How can I assist you with your account today?"
+    - text: "I'm here to help with your account issues. What's the problem?"
+    - text: "Let's get your account sorted. What's the issue you're facing?"
+    - text: "You mentioned an account issue. Can you tell me more about it?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+    - text: "See you later! Take care!"
+    - text: "Bye! Feel free to reach out if you need any more help."
+    - text: "Goodbye! Don't hesitate to come back if you need anything else."
+    - text: "Take care! Have a wonderful day ahead."
+    - text: "Bye! Have a good one, and reach out if you need assistance."
+    - text: "Farewell! I'm here if you need any further help."
+    - text: "See you next time! Have a fantastic day!"
+    - text: "Talk to you soon! Take it easy."
+    - text: "Until next time! Stay safe and take care."
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

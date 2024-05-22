@@ -1,0 +1,31 @@
+version: "3.1"
+rules:
+- rule: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: provide course info
+  steps:
+  - intent: course_info
+  - action: utter_course_info
+
+- rule: provide enrollment info
+  steps:
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- rule: provide technical support
+  steps:
+  - intent: technical_support
+  - action: utter_technical_support
+
+- rule: provide account support
+  steps:
+  - intent: account_support
+  - action: utter_account_support
+
+- rule: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

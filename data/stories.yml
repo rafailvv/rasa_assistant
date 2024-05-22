@@ -1,0 +1,189 @@
+version: "3.1"
+stories:
+- story: greet and provide course info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: course_info
+  - action: utter_course_info
+
+- story: greet and provide enrollment info
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: greet and provide technical support
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: greet and provide account support
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_support
+  - action: utter_account_support
+
+- story: greet and say goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: provide course info
+  steps:
+  - intent: course_info
+  - action: utter_course_info
+
+- story: provide enrollment info
+  steps:
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: provide technical support
+  steps:
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: provide account support
+  steps:
+  - intent: account_support
+  - action: utter_account_support
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: enroll after course info
+  steps:
+  - intent: course_info
+  - action: utter_course_info
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: technical support after course info
+  steps:
+  - intent: course_info
+  - action: utter_course_info
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: account support after enroll info
+  steps:
+  - intent: enroll_info
+  - action: utter_enroll_info
+  - intent: account_support
+  - action: utter_account_support
+
+- story: technical support after enroll info
+  steps:
+  - intent: enroll_info
+  - action: utter_enroll_info
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: account support after technical support
+  steps:
+  - intent: technical_support
+  - action: utter_technical_support
+  - intent: account_support
+  - action: utter_account_support
+
+- story: enroll info after account support
+  steps:
+  - intent: account_support
+  - action: utter_account_support
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: technical support after account support
+  steps:
+  - intent: account_support
+  - action: utter_account_support
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: course info and enroll info after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: course_info
+  - action: utter_course_info
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: course info and technical support after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: course_info
+  - action: utter_course_info
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: enroll info and account support after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enroll_info
+  - action: utter_enroll_info
+  - intent: account_support
+  - action: utter_account_support
+
+- story: enroll info and technical support after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: enroll_info
+  - action: utter_enroll_info
+  - intent: technical_support
+  - action: utter_technical_support
+
+- story: technical support and account support after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: technical_support
+  - action: utter_technical_support
+  - intent: account_support
+  - action: utter_account_support
+
+- story: account support and enroll info after greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_support
+  - action: utter_account_support
+  - intent: enroll_info
+  - action: utter_enroll_info
+
+- story: goodbye after any query
+  steps:
+  - intent: course_info
+  - action: utter_course_info
+  - intent: goodbye
+  - action: utter_goodbye
+- story: goodbye after any query
+  steps:
+  - intent: enroll_info
+  - action: utter_enroll_info
+  - intent: goodbye
+  - action: utter_goodbye
+- story: goodbye after any query
+  steps:
+  - intent: technical_support
+  - action: utter_technical_support
+  - intent: goodbye
+  - action: utter_goodbye
+- story: goodbye after any query
+  steps:
+  - intent: account_support
+  - action: utter_account_support
+  - intent: goodbye
+  - action: utter_goodbye
