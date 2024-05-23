@@ -1,31 +1,40 @@
-version: "3.1"
 rules:
-- rule: greet user
+- rule: greet and ask courses
   steps:
   - intent: greet
   - action: utter_greet
 
-- rule: provide course info
-  steps:
-  - intent: course_info
-  - action: utter_course_info
-
-- rule: provide enrollment info
-  steps:
-  - intent: enroll_info
-  - action: utter_enroll_info
-
-- rule: provide technical support
-  steps:
-  - intent: technical_support
-  - action: utter_technical_support
-
-- rule: provide account support
-  steps:
-  - intent: account_support
-  - action: utter_account_support
-
-- rule: say goodbye
+- rule: goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
+
+- rule: ask courses
+  steps:
+  - intent: ask_courses
+  - action: utter_ask_courses
+
+- rule: ask enrollment
+  steps:
+  - intent: ask_enrollment
+  - action: utter_enrollment_link
+
+- rule: ask technical issue
+  steps:
+  - intent: ask_technical_issue
+  - action: utter_technical_issue
+
+- rule: provide technical issue
+  steps:
+  - intent: provide_technical_issue
+  - action: utter_clear_cache
+
+- rule: ask account support
+  steps:
+  - intent: ask_account_support
+  - action: utter_account_support
+
+- rule: provide account issue
+  steps:
+  - intent: provide_account_issue
+  - action: utter_reset_password

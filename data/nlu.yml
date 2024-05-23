@@ -1,141 +1,74 @@
-version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hello
-    - hi
-    - hey
-    - good morning
-    - good evening
-    - howdy
-    - hi there
-    - hello there
-    - hey there
-    - hi everyone
-    - good day
-    - greetings
-    - what's up
-    - how are you
-    - how's it going
-    - how are you doing
-    - nice to meet you
-    - pleasure to meet you
-    - how do you do
-    - hey, what's up
-
-- intent: course_info
-  examples: |
-    - Tell me about your courses
-    - What programming courses do you offer?
-    - Can you give me information on the available courses?
-    - What subjects can I learn?
-    - Do you have any courses on Python?
-    - What kind of programming classes are available?
-    - Could you provide details on your courses?
-    - I'm interested in learning JavaScript, do you have a course for that?
-    - What courses are currently available?
-    - Do you offer online courses for beginners?
-    - Are there any advanced programming courses?
-    - Can you tell me more about the data science course?
-    - What programming languages can I learn with you?
-    - Do you have any web development courses?
-    - Are there any free courses available?
-    - Can you explain the curriculum for the machine learning course?
-    - What is the duration of your courses?
-    - Do you offer part-time courses?
-    - Are there any prerequisites for your courses?
-    - Do you have courses that cover both frontend and backend development?
-
-- intent: enroll_info
-  examples: |
-    - How can I enroll?
-    - What is the enrollment process?
-    - How do I sign up for a course?
-    - Can you guide me on how to enroll?
-    - What are the steps to enroll in a course?
-    - How do I register for a class?
-    - Can you help me with the enrollment process?
-    - Is there a deadline to enroll in a course?
-    - Do I need any prerequisites to enroll in a course?
-    - Where can I find the enrollment form?
-    - Can I enroll in multiple courses at once?
-    - What information do I need to provide for enrollment?
-    - Is there an enrollment fee?
-    - How do I pay for the courses?
-    - Can I get a refund if I drop a course?
-    - What documents are required for enrollment?
-    - Do you offer installment plans for course fees?
-    - How long does the enrollment process take?
-    - Can I enroll if I am an international student?
-    - What should I do if I miss the enrollment deadline?
-
-- intent: technical_support
-  examples: |
-    - I'm having technical issues
-    - The platform is not working
-    - I need help with a technical problem
-    - I'm experiencing problems with the website
-    - The course page isn't loading
-    - I'm facing technical difficulties
-    - Can you help me with a technical issue?
-    - My video lectures are not playing
-    - I'm having trouble accessing my course materials
-    - There seems to be a bug in the system
-    - I can't submit my assignments
-    - The website is running slow
-    - I get an error message when I try to log in
-    - The audio is not working on my videos
-    - I'm unable to download the course materials
-    - The quiz section is not accessible
-    - I keep getting logged out of the platform
-    - The live chat isn't working for me
-    - My progress isn't being saved
-    - I'm seeing a blank screen after logging in
-    - How do I update the app to the latest version?
-
-- intent: account_support
-  examples: |
-    - I have a problem with my account
-    - How do I change my password?
-    - I need help with my account
-    - My account is locked
-    - I can't access my account
-    - How can I update my account information?
-    - I need to reset my password
-    - My login credentials are not working
-    - Can you assist me with account recovery?
-    - I want to update my email address
-    - How do I change my username?
-    - I need to deactivate my account
-    - There's an issue with my account settings
-    - How do I enable two-factor authentication?
-    - My account has been compromised
-    - I can't update my profile picture
-    - I'm not receiving account-related emails
-    - How do I change my notification settings?
-    - Can you help me merge two accounts?
-    - How can I view my account activity?
-    - How do I cancel my subscription?
+    - Hello
+    - Hi
+    - Hey
+    - Hi there
+    - Good morning
+    - Good afternoon
 
 - intent: goodbye
   examples: |
-    - goodbye
-    - see you
-    - bye
-    - take care
-    - see you later
-    - catch you later
-    - bye bye
-    - talk to you soon
-    - see you next time
-    - I'm signing off
-    - later
-    - have a nice day
-    - farewell
-    - I'm done for now
-    - peace out
-    - have a good one
-    - until next time
-    - bye for now
-    - take it easy
-    - talk to you later
+    - Bye
+    - Goodbye
+    - See you later
+    - Talk to you later
+    - Farewell
+
+- intent: ask_courses
+  examples: |
+    - Can you tell me about your courses?
+    - What courses do you offer?
+    - I'm interested in learning a programming language.
+    - Do you have programming courses?
+    - Tell me about your Python course.
+    - What programming languages can I learn here?
+
+- intent: ask_enrollment
+  examples: |
+    - How do I sign up?
+    - How can I enroll in a course?
+    - I want to join a course.
+    - Can you help me enroll in a course?
+    - Where can I register for a course?
+
+- intent: ask_technical_issue
+  examples: |
+    - I'm having technical issues.
+    - The course page isn't loading.
+    - I'm facing some technical problems.
+    - My page is not working.
+    - The website is down.
+
+- intent: ask_account_support
+  examples: |
+    - I have a problem with my account.
+    - I need to reset my password.
+    - My account is not working.
+    - How can I change my password?
+    - I forgot my login details.
+
+- intent: provide_course
+  examples: |
+    - I am interested in Python.
+    - JavaScript sounds good.
+    - Tell me about your Java course.
+    - Do you have a course on Java?
+    - I want to learn Python.
+
+- intent: provide_technical_issue
+  examples: |
+    - The course page isn't loading.
+    - My page is not working.
+    - The website is down.
+    - I cannot access the course content.
+    - The videos are not playing.
+
+- intent: provide_account_issue
+  examples: |
+    - I need to reset my password.
+    - I cannot log in.
+    - My account is locked.
+    - I forgot my password.
+    - My username isn't working.
